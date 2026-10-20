@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 32 - Eventos em JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Painel de Controle Interativo</h1>
+        <p>Atividade prática de eventos em JavaScript.</p>
+
+        <section>
+            <h2>1. Caixa de mudança de estado</h2>
+            <p>Passe o mouse e clique na caixa para mudar sua cor.</p>
+            <div id="caixa">Clique aqui!</div>
+        </section>
+
+        <section>
+            <h2>2. Console de teclado</h2>
+            <label for="entrada">Digite um texto e pressione Enter:</label>
+            <input type="text" id="entrada" placeholder="Digite aqui">
+            <p id="tecla" aria-live="polite">Nenhuma tecla pressionada.</p>
+            <ul id="envios" aria-live="polite"></ul>
+        </section>
+
+        <section>
+            <h2>3. Contador dinâmico</h2>
+            <p>Use os botões ou as setas para cima e para baixo.</p>
+            <p id="contador" aria-live="polite">0</p>
+            <button id="incrementar">Incrementar (+)</button>
+            <button id="decrementar">Decrementar (-)</button>
+        </section>
+    </main>
+</body>
+</html>
